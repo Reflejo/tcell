@@ -19,7 +19,7 @@ package termbox
 import (
 	"errors"
 
-	"github.com/gdamore/tcell"
+	"github.com/Reflejo/tcell"
 )
 
 var screen tcell.Screen

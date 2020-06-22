@@ -2,7 +2,7 @@
 
 package hz1500
 
-import "github.com/gdamore/tcell/terminfo"
+import "github.com/Reflejo/tcell/terminfo"
 
 func init() {
 
