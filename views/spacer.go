@@ -15,7 +15,7 @@
 package views
 
 import (
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // Spacer is a Widget that occupies no visible real-estate.  It is useful to

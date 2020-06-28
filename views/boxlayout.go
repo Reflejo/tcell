@@ -15,7 +15,7 @@
 package views
 
 import (
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // BoxLayout is a container Widget that lays out its child widgets in

@@ -18,7 +18,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // TextArea is a pannable 2 dimensional text widget. It wraps both

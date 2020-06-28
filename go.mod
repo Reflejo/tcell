@@ -1,4 +1,4 @@
-module github.com/progrium/tcell
+module github.com/gdamore/tcell
 
 go 1.12
 

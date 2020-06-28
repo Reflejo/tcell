@@ -22,7 +22,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 func makebox(s tcell.Screen) {

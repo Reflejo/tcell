@@ -15,7 +15,7 @@
 package views
 
 import (
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // View represents a logical view on an area.  It will have some underlying

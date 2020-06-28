@@ -25,10 +25,10 @@ import (
 
 	"golang.org/x/text/transform"
 
-	"github.com/Reflejo/tcell/terminfo"
+	"github.com/gdamore/tcell/terminfo"
 
 	// import the stock terminals
-	_ "github.com/Reflejo/tcell/terminfo/base"
+	_ "github.com/gdamore/tcell/terminfo/base"
 )
 
 // NewTerminfoScreen returns a Screen that uses the stock TTY interface

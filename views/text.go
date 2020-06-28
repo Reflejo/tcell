@@ -17,7 +17,7 @@ package views
 import (
 	"github.com/mattn/go-runewidth"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // Text is a Widget with containing a block of text, which can optionally

@@ -15,7 +15,7 @@
 package views
 
 import (
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 	"unicode"
 )
 

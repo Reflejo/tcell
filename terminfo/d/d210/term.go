@@ -2,7 +2,7 @@
 
 package d210
 
-import "github.com/Reflejo/tcell/terminfo"
+import "github.com/gdamore/tcell/terminfo"
 
 func init() {
 

@@ -15,7 +15,7 @@
 package views
 
 import (
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // Widget is the base object that all onscreen elements implement.

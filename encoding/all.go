@@ -16,7 +16,7 @@ package encoding
 
 import (
 	"github.com/gdamore/encoding"
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 
 	"golang.org/x/text/encoding/charmap"
 	"golang.org/x/text/encoding/japanese"

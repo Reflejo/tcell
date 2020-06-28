@@ -17,7 +17,7 @@ package views
 import (
 	"sync"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // CellModel models the content of a CellView.  The dimensions used within

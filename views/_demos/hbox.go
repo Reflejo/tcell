@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Reflejo/tcell"
-	"github.com/Reflejo/tcell/views"
+	"github.com/gdamore/tcell"
+	"github.com/gdamore/tcell/views"
 )
 
 type boxL struct {

@@ -26,7 +26,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 var red = int32(rand.Int() % 256)

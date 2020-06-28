@@ -17,7 +17,7 @@ package views
 import (
 	"sync"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 // TextBar is a Widget that provides a single line of text, but with

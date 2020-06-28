@@ -20,7 +20,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Reflejo/tcell"
+	"github.com/gdamore/tcell"
 )
 
 func main() {
