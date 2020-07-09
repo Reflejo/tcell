@@ -1446,3 +1446,7 @@ func (t *tScreen) Resize(int, int, int, int) {}
 func (t *tScreen) SetDriver(driver TermDriver) {
 	t.driver = driver
 }
+
+type DriverSetter interface {
+	SetDriver(TermDriver)
+}
