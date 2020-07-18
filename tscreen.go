@@ -1227,6 +1227,9 @@ func (t *tScreen) scanInput(buf *bytes.Buffer, expire bool) {
 func (t *tScreen) collectEventsFromInput(buf *bytes.Buffer, expire bool) []Event {
 
 	res := make([]Event, 0, 20)
+	if t.fini {
+		return res
+	}
 
 	t.Lock()
 	defer t.Unlock()
