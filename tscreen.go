@@ -40,16 +40,17 @@ import (
 // $COLUMNS environment variables can be set to the actual window size,
 // otherwise defaults taken from the terminal database are used.
 func NewTerminfoScreen() (Screen, error) {
-	ti, e := terminfo.LookupTerminfo(os.Getenv("TERM"))
+	driver := &defaultTermDriver{}
+	ti, e := terminfo.LookupTerminfo(driver.Term())
 	if e != nil {
-		ti, e = loadDynamicTerminfo(os.Getenv("TERM"))
+		ti, e = loadDynamicTerminfo(driver.Term())
 		if e != nil {
 			return nil, e
 		}
 		terminfo.AddTerminfo(ti)
 	}
 	t := &tScreen{ti: ti}
-	t.driver = &defaultTermDriver{}
+	t.driver = driver
 
 	t.keyexist = make(map[Key]bool)
 	t.keycodes = make(map[string]*tKeyCode)
