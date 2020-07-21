@@ -27,6 +27,11 @@ type TermDriver interface {
 	// ErrWinSizeUnused to tell Screen to use platform syscalls to get the
 	// window size from the out file descriptor.
 	WinSize() (width int, height int, err error)
+
+	// Term returns the TERM string the pty supports, this usually comes from
+	// the TERM environment variable but for other cases like SSH, it has to be
+	// set from the driver.
+	Term() string
 }
 
 // defaultTermDriver is what's used when you don't specify a custom TermDriver
@@ -56,4 +61,8 @@ func (d *defaultTermDriver) Fini() {
 
 func (d *defaultTermDriver) WinSize() (int, int, error) {
 	return 0, 0, ErrWinSizeUnused
+}
+
+func (d *defaultTermDriver) Term() string {
+	return os.Getenv("TERM")
 }
