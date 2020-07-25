@@ -65,8 +65,8 @@ func (t *tScreen) termioInit() error {
 	// use non-blocking reads, but now a separate input loop and timer
 	// copes with the problems we had on some systems (BSD/Darwin)
 	// where close hung forever.
-	raw.Cc[unix.VMIN] = 1
-	raw.Cc[unix.VTIME] = 0
+	raw.Cc[unix.VMIN] = 0
+	raw.Cc[unix.VTIME] = 50
 
 	e = unix.IoctlSetTermios(int(t.out.Fd()), unix.TCSETS, raw)
 	if e != nil {
